@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<script>
+
+ $(document).ready(function(){
+   var waterdm=0;  $('input[type="checkbox"]').on('click',function() 
+    {
+    waterdm = waterdm+parseInt($(this).val());
+  $("#price").val(waterdm);
+ });
+});
+
+</script> 
+
+</head>
+
+<body>
+<p><input type="checkbox" id="waterdm"  name="waterdm" value="10" />Water Damage</p>
+<p><input type="checkbox" id="screendm" name="screendm" value="20" />Screen Damage</p>
+<p><input type="checkbox" id="Chargerdm" name="Chargerdm" value="30" />Charger Damage</p>
+<p><input type="checkbox" id="hdphdm" name="hdphdm" value="10" />Headphone Damage</p>
+
+<p>
+ Calculated Price: <input type="text" name="price" id="price" />
+</p>
+ 
+ </body>
+   </html>
